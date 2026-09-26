@@ -1,0 +1,26 @@
+Peshawar Bazar - requested changes
+
+1. Splash screen: cropped the splash-logo asset so the first flash shows only the logo with transparent space around it; no extra app text was added.
+2. UI sizing: increased key app text sizes and the sizes/padding of text backgrounds such as search, category chips, product cards, and section headings.
+3. I want this: tapping the button now opens an order-details panel with:
+   - Name
+   - Father name
+   - Complete address
+   - Phone number
+   - Payment method: EasyPaisa or JazzCash
+   The form validates required fields and phone length before submitting.
+4. Order details are saved locally with the purchase request so they remain available in the app's local storage.
+
+Validation note: a full TypeScript build could not be run because the uploaded project does not include its node_modules/workspace dependencies. The source files were updated directly.
+
+
+NEW COMPANY / ADMIN / ORDER WORKFLOW
+- Added a separate Company Portal for approved companies.
+- Only the Admin Panel can create, approve, suspend companies and forward customer orders.
+- Companies can publish products only after Admin approval.
+- Customer orders are stored on the server and first go to Admin (pending_admin).
+- Admin selects an approved company and forwards the order.
+- Customers never get a direct company account/contact relationship through the app.
+- Optional email notifications: ADMIN_EMAIL receives new orders; the selected company email receives an order only after Admin forwards it. SMTP environment variables are required for email.
+
+- Payment method icons updated with the user-provided official EasyPaisa and JazzCash logo images; the previous letter placeholders were removed.

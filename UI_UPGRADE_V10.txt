@@ -1,0 +1,10 @@
+PESHAWAR BAZAR v10 UI + SECURITY UPGRADE
+- Refreshed marketplace palette around Peshawar Bazar green branding.
+- Home screen copy/search/categories refined for a cleaner marketplace feel.
+- Product cards now show PKR prices and refined borders/spacing.
+- Admin panel remains separated from the customer tab UI.
+- Added general user/company login throttling and session cleanup.
+- Added security response headers and stricter browser permissions.
+- Added company order status transitions: confirmed, preparing, shipped, delivered, cancelled.
+- Existing admin/company/order/chat systems retained.
+Production note: 2FA, push notifications, payment-provider server verification, and a managed realtime service still require provider credentials/infrastructure; they are not safely enabled with placeholder secrets.

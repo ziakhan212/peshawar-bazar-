@@ -1,0 +1,6 @@
+Splash screen updated as requested:
+- Center: Peshawar Bazar logo.
+- Bottom: "From".
+- Under From: small Pixel Press & Code Studio logo mark.
+- Company name shown beside it in two lines: "Pixel Press &" / "Code Studio".
+- Developer tagline shown underneath.

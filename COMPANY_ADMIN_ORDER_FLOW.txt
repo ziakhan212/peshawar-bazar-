@@ -1,0 +1,20 @@
+Peshawar Bazar - Company/Admin Order Flow
+
+1. Only the admin can create/approve/suspend company accounts.
+2. Approved companies use the separate Company Portal to publish products.
+3. Customers do not receive company login/contact details and do not communicate directly with companies through the app.
+4. A customer submits an order with name, father name, address, phone and payment method.
+5. The order is stored on the server as pending_admin and is visible in Admin Panel. If ADMIN_EMAIL is configured, the admin also receives an email.
+6. Admin chooses an approved company and forwards the order.
+7. Only after admin forwarding does the company see the customer's order/delivery information. If company email/SMTP is configured, the company also receives an email.
+8. Company and customer are connected through the Peshawar Bazar admin workflow, not by a direct app relationship.
+
+Environment variables:
+ADMIN_USERNAME=admin
+ADMIN_PASSWORD=<strong admin password>
+ADMIN_EMAIL=<admin email for order notifications, optional>
+SMTP_HOST=<smtp host>
+SMTP_PORT=587
+SMTP_USER=<smtp username>
+SMTP_PASS=<smtp password>
+SMTP_FROM=<from address, optional>

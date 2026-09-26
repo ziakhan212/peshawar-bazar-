@@ -1,0 +1,24 @@
+PESHAWAR BAZAR - NEW FEATURES
+
+1. Smart search suggestions / hashtag-style chips
+- Search matches product title, category and seller.
+- Matching products generate clickable #tags under the search bar.
+
+2. Two listing types
+- Company listing: Buy opens the customer order panel. Order goes to Admin, then Admin forwards it to the approved company.
+- Member/user listing: Buy is replaced by Message seller and opens Inbox. No company order panel is used.
+
+3. Feeds / Shorts
+- New Feeds bottom tab.
+- Users can upload short videos.
+- Like, comment, save and Buy actions are available.
+- A feed post can optionally be connected to a product, so Buy opens that product.
+
+4. Inbox
+- New Inbox bottom tab for member-to-member messages.
+- User listings can start a conversation with the listing owner.
+- Company listings remain behind the Admin workflow.
+
+5. Backend endpoints added for feeds and member messages.
+
+NOTE: Video and image URIs are currently stored as the app/server provides them. For production multi-device video hosting, connect an object-storage/CDN upload service and store public media URLs.
